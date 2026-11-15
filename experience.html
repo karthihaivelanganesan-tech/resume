@@ -5,63 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience | Karishma Karthihaivelan</title>
 
-  <!-- google fonts: Lora for headings, Inter for text -->
+  <!-- google fonts: Rozha One for big headings, Montserrat for text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav bar -->
+  <!-- nav bar (floating pill) -->
   <nav id="navbar">
-    <a href="index.html" class="logo">Karishma Karthihaivelan</a>
+    <a href="index.html" class="logo"><span class="logo-mark">K</span> Karishma</a>
     <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="experience.html" class="nav-link active">Experience</a>
-      <a href="resume.html" class="nav-link">Resume</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-      <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link active">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </div>
+    <a href="contact.html" class="btn btn-small">Let's talk</a>
   </nav>
 
   <main>
 
     <!-- experience cards -->
     <section id="experience">
-      <h1>Experience</h1>
+      <p class="label">02 / Experience</p>
+      <h1>What I've done so far.</h1>
       <p class="intro">Most recent first.</p>
-      <div class="cards">
+      <div class="cards three">
         <div class="card">
+          <p class="card-num">01 / Volunteering</p>
           <h3>Volunteer, Registration</h3>
           <p class="meta">Blood Donation Camp run by KMC at TAPMI &middot; 2026</p>
           <p>Ran registration, queues and coordination over two days for about 800 MBA student donors.</p>
         </div>
         <div class="card">
+          <p class="card-num">02 / Leadership</p>
           <h3>Disciplinary Head</h3>
           <p class="meta">Student Council, DPS Secunderabad &middot; Class 10</p>
           <p>Served as Disciplinary Head on the student council and resolved disputes between students.</p>
         </div>
         <div class="card">
+          <p class="card-num">03 / Team</p>
           <h3>Dance Team Lead</h3>
-          <p class="meta">School Annual Day</p>
-          <p>Led the 30-member dance team for a show with 150 students. Planned the routines and music so the team stayed in sync.</p>
+          <p class="meta">Inter-State Dance Competition</p>
+          <p>Led the 30-member dance team. Planned the routines and music so the team stayed in sync.</p>
         </div>
       </div>
+    </section>
 
-      <h2 class="space-top">Achievements</h2>
-      <ul class="skill-list">
-        <li><strong>Chess:</strong> rated 1800 Elo online; won several chess competitions at school, online and in local tournaments.</li>
-      </ul>
+    <!-- achievements -->
+    <section id="achievements">
+      <p class="label">Achievements</p>
+      <div class="highlight">
+        <p class="number">1800</p>
+        <p><strong>Elo rating in online chess.</strong> I've also won several chess competitions at school, online and in local tournaments.</p>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Karishma Karthihaivelan. Built with HTML and CSS.</p>
+    <p class="foot-word">Safar.</p>
+    <p>&copy; 2026 Karishma Karthihaivelan &middot; Built with HTML, CSS and a little JavaScript</p>
   </footer>
+
+  <!-- light background music (starts only when clicked) -->
+  <button id="music-btn" class="music-btn" type="button" aria-pressed="false">&#9834; Play music</button>
+  <script src="music.js"></script>
 
 </body>
 </html>

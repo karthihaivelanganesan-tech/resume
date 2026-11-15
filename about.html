@@ -5,39 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Karishma Karthihaivelan</title>
 
-  <!-- google fonts: Lora for headings, Inter for text -->
+  <!-- google fonts: Rozha One for big headings, Montserrat for text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav bar -->
+  <!-- nav bar (floating pill) -->
   <nav id="navbar">
-    <a href="index.html" class="logo">Karishma Karthihaivelan</a>
+    <a href="index.html" class="logo"><span class="logo-mark">K</span> Karishma</a>
     <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About</a>
-      <a href="experience.html" class="nav-link">Experience</a>
-      <a href="resume.html" class="nav-link">Resume</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-      <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </div>
+    <a href="contact.html" class="btn btn-small">Let's talk</a>
   </nav>
 
   <main>
 
     <!-- my story -->
     <section id="about">
-      <h1>About me</h1>
-      <p>I've lived in six cities across India. Being the new student so often taught me to read a room, adapt quickly and find common ground with people very different from me. I studied Physics, Chemistry and Maths in school and now study management. I speak Tamil, Hindi, English and Telugu fluently. I haven't chosen a career yet, and I'm enjoying finding out what fits me.</p>
+      <p class="label">01 / About me</p>
+      <h1>Six cities, one way of working.</h1>
+      <p class="lead">I've lived in six cities across India. Being the new student so often taught me to read a room, adapt quickly and find common ground with people very different from me.</p>
+      <p>I studied Physics, Chemistry and Maths in school and now study management. I speak Tamil, Hindi, English and Telugu fluently. I haven't chosen a career yet, and I'm enjoying finding out what fits me.</p>
     </section>
 
     <!-- education -->
     <section id="education">
-      <h2>Education</h2>
+      <p class="label">02 / Education</p>
+      <h2>Where I study.</h2>
       <ul class="edu-list">
         <li><strong>Integrated Programme in Management</strong>, TAPMI, Manipal <span class="meta">2026 &ndash; present</span></li>
         <li><strong>BBA, Digital Business and Entrepreneurship</strong>, IIM Bangalore <span class="meta">2026 &ndash; present (dual degree)</span></li>
@@ -48,23 +51,43 @@
 
     <!-- skills -->
     <section id="skills">
-      <h2>Skills and interests</h2>
+      <p class="label">03 / Skills and interests</p>
+      <h2>What I bring.</h2>
       <ul class="skill-list">
-        <li><strong>Organising people:</strong> handled registration for about 800 donors at a two-day camp.</li>
-        <li><strong>Resolving conflict:</strong> settled student disputes as Disciplinary Head.</li>
-        <li><strong>Leading a team:</strong> led a 30-member dance team for the Annual Day.</li>
-        <li><strong>Video editing:</strong> I edit reels in InShot.</li>
-        <li><strong>Chess:</strong> rated 1800 Elo online; won several competitions at school, online and in local tournaments.</li>
-        <li><strong>Languages:</strong> fluent in Tamil, Hindi, English and Telugu.</li>
-        <li><strong>Interests:</strong> chess, badminton, dance and music.</li>
+        <li><span class="num">01</span><div><strong>Organising people</strong><br>Handled registration for about 800 donors at a two-day camp.</div></li>
+        <li><span class="num">02</span><div><strong>Resolving conflict</strong><br>Settled student disputes as Disciplinary Head.</div></li>
+        <li><span class="num">03</span><div><strong>Leading a team</strong><br>Led a 30-member dance team at an inter-state dance competition.</div></li>
+        <li><span class="num">04</span><div><strong>Video editing</strong><br>I edit reels in InShot.</div></li>
+        <li><span class="num">05</span><div><strong>Chess</strong><br>Rated 1800 Elo online; won several competitions at school, online and in local tournaments.</div></li>
+        <li><span class="num">06</span><div><strong>Languages</strong><br>Fluent in Tamil, Hindi, English and Telugu.</div></li>
       </ul>
+      <p class="interests"><strong>Interests:</strong> chess, badminton, dance and music.</p>
+    </section>
+
+    <!-- tools -->
+    <section id="tools">
+      <p class="label">04 / Tools and learning</p>
+      <h2>Tools I use.</h2>
+      <div class="tool-row">
+        <span class="tool">Canva</span>
+        <span class="tool">Claude Pro</span>
+        <span class="tool">ChatGPT Pro</span>
+        <span class="tool">Microsoft PowerPoint</span>
+        <span class="tool">Microsoft Excel</span>
+        <span class="tool">AI tools <em>(learning)</em></span>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Karishma Karthihaivelan. Built with HTML and CSS.</p>
+    <p class="foot-word">Safar.</p>
+    <p>&copy; 2026 Karishma Karthihaivelan &middot; Built with HTML, CSS and a little JavaScript</p>
   </footer>
+
+  <!-- light background music (starts only when clicked) -->
+  <button id="music-btn" class="music-btn" type="button" aria-pressed="false">&#9834; Play music</button>
+  <script src="music.js"></script>
 
 </body>
 </html>

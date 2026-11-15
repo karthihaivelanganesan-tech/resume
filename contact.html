@@ -5,39 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Karishma Karthihaivelan</title>
 
-  <!-- google fonts: Lora for headings, Inter for text -->
+  <!-- google fonts: Rozha One for big headings, Montserrat for text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav bar -->
+  <!-- nav bar (floating pill) -->
   <nav id="navbar">
-    <a href="index.html" class="logo">Karishma Karthihaivelan</a>
+    <a href="index.html" class="logo"><span class="logo-mark">K</span> Karishma</a>
     <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="experience.html" class="nav-link">Experience</a>
-      <a href="resume.html" class="nav-link">Resume</a>
-      <a href="contact.html" class="nav-link active">Contact</a>
-      <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
     </div>
+    <a href="contact.html" class="btn btn-small">Let's talk</a>
   </nav>
 
   <main>
 
     <!-- contact -->
     <section id="contact">
-      <h1>Let's talk</h1>
-      <p>I'd love to hear from you, whether it's about a project, an opportunity or just to connect.</p>
-      <ul class="contact-list">
-        <li><strong>Phone:</strong> <a href="tel:+917893055176">+91 78930 55176</a></li>
-        <li><strong>Email:</strong> <a href="mailto:karishmakarthihaivelan10@gmail.com">karishmakarthihaivelan10@gmail.com</a></li>
-        <li><strong>Location:</strong> Hyderabad, Telangana</li>
-      </ul>
+      <p class="label">04 / Contact</p>
+      <h1>Let's talk.</h1>
+      <p class="lead">I'm looking for a summer internship at an NGO in Hyderabad for summer 2027, and I'm keen to build my skills in marketing, HR and finance.</p>
+      <p>I'd love to hear from you, whether it's about an internship, a project or just to connect.</p>
+      <div class="contact-cards">
+        <a href="tel:+917893055176" class="card card-link">
+          <p class="card-num">Phone</p>
+          <h3>+91 78930 55176</h3>
+        </a>
+        <a href="mailto:karishmakarthihaivelan10@gmail.com" class="card card-link">
+          <p class="card-num">Email</p>
+          <h3 class="small-h">karishmakarthihaivelan10@gmail.com</h3>
+        </a>
+        <div class="card">
+          <p class="card-num">Location</p>
+          <h3>Hyderabad, Telangana</h3>
+        </div>
+      </div>
       <div class="buttons">
         <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
         <a href="tel:+917893055176" class="btn btn-outline">Call me</a>
@@ -47,8 +58,13 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Karishma Karthihaivelan. Built with HTML and CSS.</p>
+    <p class="foot-word">Safar.</p>
+    <p>&copy; 2026 Karishma Karthihaivelan &middot; Built with HTML, CSS and a little JavaScript</p>
   </footer>
+
+  <!-- light background music (starts only when clicked) -->
+  <button id="music-btn" class="music-btn" type="button" aria-pressed="false">&#9834; Play music</button>
+  <script src="music.js"></script>
 
 </body>
 </html>

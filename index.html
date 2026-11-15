@@ -5,49 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Karishma Karthihaivelan</title>
 
-  <!-- google fonts: Lora for headings, Inter for text -->
+  <!-- google fonts: Rozha One for big headings, Montserrat for text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav bar -->
+  <!-- nav bar (floating pill) -->
   <nav id="navbar">
-    <a href="index.html" class="logo">Karishma Karthihaivelan</a>
+    <a href="index.html" class="logo"><span class="logo-mark">K</span> Karishma</a>
     <div class="nav-links">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="experience.html" class="nav-link">Experience</a>
-      <a href="resume.html" class="nav-link">Resume</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-      <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </div>
+    <a href="contact.html" class="btn btn-small">Let's talk</a>
   </nav>
 
-  <!-- top part with my photo -->
+  <!-- top part -->
   <header id="hero">
-    <div class="hero-text">
-      <p class="hello">Hello, I'm</p>
-      <h1>Karishma Karthihaivelan</h1>
-      <p class="tagline">From science to management, six cities in between: I listen, adapt and turn a group into a team.</p>
-      <p>First-year student in TAPMI's Integrated Programme in Management, doing a dual degree with IIM Bangalore's BBA in Digital Business and Entrepreneurship. Based in Hyderabad, Telangana.</p>
-      <p class="contact-line"><a href="tel:+917893055176">+91 78930 55176</a> &middot; <a href="mailto:karishmakarthihaivelan10@gmail.com">karishmakarthihaivelan10@gmail.com</a> &middot; Hyderabad, Telangana</p>
-      <div class="buttons">
-        <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
-        <a href="experience.html" class="btn btn-outline">See my experience</a>
-      </div>
+    <div class="three-words">
+      <span>Listen</span>
+      <span>Adapt</span>
+      <span>Lead</span>
     </div>
+
+    <p class="tag">Portfolio &middot; 2026</p>
+    <h1 class="big-word">Safar.</h1>
+    <p class="byline">Karishma Karthihaivelan <span class="star">&#10022;</span> Portfolio</p>
+    <p class="hero-quote"><span class="tag">Safar = journey</span> &ldquo;From science to management, six cities in between: I listen, adapt and turn a group into a team.&rdquo;</p>
+
     <img src="photo.jpg" alt="Photo of Karishma Karthihaivelan" class="photo">
+
+    <p class="hero-intro">First-year student in TAPMI's Integrated Programme in Management, doing a dual degree with IIM Bangalore's BBA in Digital Business and Entrepreneurship. Based in Hyderabad, Telangana.</p>
+    <p class="contact-line"><a href="tel:+917893055176">+91 78930 55176</a> &middot; <a href="mailto:karishmakarthihaivelan10@gmail.com">karishmakarthihaivelan10@gmail.com</a></p>
+    <div class="buttons center">
+      <a href="mailto:karishmakarthihaivelan10@gmail.com?subject=Hello%20Karishma" class="btn">Email me</a>
+      <a href="experience.html" class="btn btn-outline">See my experience</a>
+    </div>
   </header>
+
+  <!-- scrolling strip -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Six cities</span><span class="star">&#10022;</span><span>Four languages</span><span class="star">&#10022;</span><span>Two degrees</span><span class="star">&#10022;</span><span>One journey</span><span class="star">&#10022;</span><span>Six cities</span><span class="star">&#10022;</span><span>Four languages</span><span class="star">&#10022;</span><span>Two degrees</span><span class="star">&#10022;</span><span>One journey</span><span class="star">&#10022;</span>
+      <span aria-hidden="true" class="dup"><span>Six cities</span><span class="star">&#10022;</span><span>Four languages</span><span class="star">&#10022;</span><span>Two degrees</span><span class="star">&#10022;</span><span>One journey</span><span class="star">&#10022;</span><span>Six cities</span><span class="star">&#10022;</span><span>Four languages</span><span class="star">&#10022;</span><span>Two degrees</span><span class="star">&#10022;</span><span>One journey</span><span class="star">&#10022;</span></span>
+    </div>
+  </div>
 
   <main>
 
     <!-- quick numbers -->
     <section id="glance">
-      <h2>At a glance</h2>
+      <p class="label">01 / At a glance</p>
+      <h2>A few quick facts.</h2>
       <div class="stats">
         <div class="stat">
           <p class="number">92%</p>
@@ -70,21 +86,26 @@
 
     <!-- links to the other pages -->
     <section id="explore">
-      <h2>Explore my resume</h2>
+      <p class="label">02 / Explore</p>
+      <h2>Explore my resume.</h2>
       <div class="cards">
         <a href="about.html" class="card card-link">
+          <p class="card-num">01 / About</p>
           <h3>About me</h3>
           <p>My story, education, skills and interests.</p>
         </a>
         <a href="experience.html" class="card card-link">
+          <p class="card-num">02 / Work</p>
           <h3>Experience</h3>
           <p>Where I have volunteered, led and won.</p>
         </a>
         <a href="resume.html" class="card card-link">
+          <p class="card-num">03 / Resume</p>
           <h3>Resume</h3>
           <p>My one-page resume, ready to download.</p>
         </a>
         <a href="contact.html" class="card card-link">
+          <p class="card-num">04 / Contact</p>
           <h3>Contact</h3>
           <p>My phone, email and location.</p>
         </a>
@@ -94,8 +115,13 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Karishma Karthihaivelan. Built with HTML and CSS.</p>
+    <p class="foot-word">Safar.</p>
+    <p>&copy; 2026 Karishma Karthihaivelan &middot; Built with HTML, CSS and a little JavaScript</p>
   </footer>
+
+  <!-- light background music (starts only when clicked) -->
+  <button id="music-btn" class="music-btn" type="button" aria-pressed="false">&#9834; Play music</button>
+  <script src="music.js"></script>
 
 </body>
 </html>
