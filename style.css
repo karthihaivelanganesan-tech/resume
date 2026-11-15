@@ -1,4 +1,4 @@
-/* colours - cream, deep red wood, dark cards, gold and mustard */
+/* ---------- my colours ---------- */
 :root {
   --cream: #FBF4EE;
   --paper: #FFFDF9;
@@ -14,11 +14,11 @@
   --light: #FBEFE6;
   --soft-light: #E9D3C8;
   --line: rgba(122, 31, 11, 0.18);
-  /* wood grain made with an SVG noise filter - no image file needed */
+  /* wood texture - its an svg noise filter so i dont need an image */
   --wood: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2000' height='1200'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.003 0.09' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.02 0 0 0 0 0 0 0 0 -3 1.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E");
 }
 
-/* basic page setup */
+/* ---------- basic stuff ---------- */
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -30,7 +30,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.65;
-  /* keeps the footer at the bottom on short pages */
+  /* this keeps the footer at the bottom when a page is short */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -53,14 +53,14 @@ a { color: var(--gold); }
 
 a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
-/* the red wood part of every page */
+/* red wood background for the main part */
 main {
   flex: 1;
   background: var(--wood), linear-gradient(180deg, var(--red), var(--red-dark));
   color: var(--light);
 }
 
-/* gold labels like "✦ 01 / About me ✦" */
+/* small gold labels above the headings */
 .label {
   font-size: 13px;
   font-weight: 700;
@@ -74,7 +74,7 @@ main {
 
 .label::after { content: "\00a0\00a0\2726"; }
 
-/* mustard highlight box behind key words */
+/* the yellow box behind some words */
 .hl {
   display: inline-block;
   background-color: var(--mustard);
@@ -102,7 +102,7 @@ main {
   50% { opacity: 0.3; transform: scale(0.7) rotate(45deg); }
 }
 
-/* nav bar - a floating pill that stays on top */
+/* ---------- nav bar ---------- */
 #navbar {
   position: sticky;
   top: 12px;
@@ -150,10 +150,10 @@ main {
 
 .nav-link:hover { background-color: rgba(142, 27, 14, 0.08); color: var(--red); }
 
-/* shows which page you are on */
+/* highlight the page im on */
 .nav-link.active { background-color: var(--red); color: var(--cream); }
 
-/* buttons - mustard with a red edge */
+/* ---------- buttons ---------- */
 .btn {
   display: inline-block;
   padding: 13px 26px;
@@ -181,7 +181,7 @@ main .btn-outline { color: var(--light); border-color: var(--light); }
 
 .buttons.center { justify-content: center; }
 
-/* hero - cream, everything centred around the big word */
+/* ---------- top section ---------- */
 #hero {
   max-width: 960px;
   margin: 0 auto;
@@ -249,7 +249,7 @@ main .btn-outline { color: var(--light); border-color: var(--light); }
 
 .contact-line a { color: var(--red); }
 
-/* scrolling strip */
+/* moving text strip */
 .marquee {
   overflow: hidden;
   background-color: var(--ink);
@@ -277,7 +277,7 @@ main .btn-outline { color: var(--light); border-color: var(--light); }
   to { transform: translateX(-50%); }
 }
 
-/* normal sections */
+/* ---------- sections ---------- */
 main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .lead { font-size: 19px; }
@@ -286,7 +286,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .meta { font-size: 14px; color: var(--peach); font-weight: 600; }
 
-/* things rise in as you scroll (browsers that support it) */
+/* slide in effect when you scroll (only works in some browsers) */
 @supports (animation-timeline: view()) {
   main section > *, .card, .stat, .edu-list li, .skill-list li {
     animation: fade-up linear both;
@@ -295,7 +295,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
   }
 }
 
-/* at a glance numbers */
+/* at a glance boxes */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
 .stat {
@@ -317,7 +317,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .stat .number { font-size: 52px; color: var(--gold); margin-bottom: 8px; }
 
-/* dark cards with an orange-red edge and a brown header strip */
+/* ---------- cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
 .cards.three { grid-template-columns: repeat(3, 1fr); }
@@ -350,7 +350,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .card:hover { border-color: var(--gold); box-shadow: 0 0 24px rgba(242, 197, 27, 0.25); transform: translateY(-4px); }
 
-/* highlight box for the chess achievement */
+/* chess box */
 .highlight {
   display: flex;
   align-items: center;
@@ -366,7 +366,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .highlight p { margin: 0; }
 
-/* education + skills lists */
+/* education and skills */
 .edu-list, .skill-list { list-style: none; padding: 0; margin: 0; }
 
 .edu-list li {
@@ -391,7 +391,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .interests { margin-top: 32px; }
 
-/* tools shown as short labels */
+/* tools */
 .tool-row { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .tool {
@@ -412,7 +412,7 @@ main section { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .small-h { font-size: 18px; word-break: break-all; }
 
-/* resume sheet (looks like a printed page) */
+/* resume - made it look like a paper */
 #resume-wrap { max-width: 1000px; margin: 0 auto; padding: 72px 24px; }
 
 .resume-top { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
@@ -460,7 +460,7 @@ footer p { margin: 0 auto 4px; }
 
 .foot-word { font-family: 'Yatra One', serif; font-size: 52px; color: var(--gold); line-height: 1.2; }
 
-/* floating music button */
+/* music button (bottom right) */
 .music-btn {
   position: fixed;
   right: 20px;
@@ -481,7 +481,7 @@ footer p { margin: 0 auto 4px; }
 
 .music-btn:hover { background-color: var(--red-dark); }
 
-/* phones and small screens */
+/* ---------- for phones ---------- */
 @media (max-width: 700px) {
   #navbar { position: static; flex-wrap: wrap; justify-content: center; border-radius: 20px; padding: 10px; }
   .nav-links { flex-wrap: wrap; justify-content: center; }
@@ -499,13 +499,13 @@ footer p { margin: 0 auto 4px; }
   .res-date { float: none; display: block; }
 }
 
-/* people who prefer less motion get a still page */
+/* turn off animations if someone doesnt want motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
 
-/* printing - only the resume, black on white, one A4 page */
+/* when printing only show the resume */
 @media print {
   @page { size: A4; margin: 15mm; }
   body { background: #FFFFFF; color: #000000; display: block; min-height: 0; }
