@@ -1,6 +1,6 @@
-/* my colours
-   cream #FBF4EE, maroon #8E1B0E and #5A1206, dark brown #1D1513,
-   orange-red #D9471F, gold #F2C51B, mustard #85700A, peach #F7A38C */
+/* my colours (blue theme)
+   off-white #F4F8FD, blue #1E4D8C and dark blue #0F2C55, navy cards #0F1E36,
+   bright blue #4A90E2, sky blue #8EC5FF, mid blue #2F6FC0, pale blue #CFE4FF */
 
 /* basic stuff */
 * {
@@ -9,9 +9,9 @@
 
 body {
   margin: 0;
-  background-color: #FBF4EE;
-  color: #2A0903;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #F4F8FD;
+  color: #0B1A30;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.65;
   /* this keeps the footer at the bottom when a page is short */
@@ -21,18 +21,18 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Yatra One', serif;
-  font-weight: 400;
+  font-family: Georgia, Garamond, serif;
+  font-weight: 700;
   line-height: 1.2;
   margin: 0 0 16px 0;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 34px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 21px;
 }
 
 p {
@@ -41,31 +41,31 @@ p {
 }
 
 a {
-  color: #F2C51B;
+  color: #8EC5FF;
 }
 
-/* red background for the main part, a bit darker at the bottom */
+/* blue background for the main part, a bit darker at the bottom */
 main {
   flex: 1;
-  background: linear-gradient(180deg, #8E1B0E, #5A1206);
-  color: #FBEFE6;
+  background: linear-gradient(180deg, #1E4D8C, #0F2C55);
+  color: #EAF2FC;
 }
 
-/* small gold labels above the headings */
+/* small light blue labels above the headings */
 .label {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #F2C51B;
+  color: #8EC5FF;
   margin-bottom: 12px;
 }
 
-/* the yellow box behind some words */
+/* the blue box behind some words */
 .hl {
   display: inline-block;
-  background-color: #85700A;
-  color: #F7A38C;
+  background-color: #2F6FC0;
+  color: #CFE4FF;
   padding: 0 14px;
   border-radius: 4px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
@@ -73,8 +73,8 @@ main {
 
 .tag {
   display: inline-block;
-  background-color: #8E1B0E;
-  color: #FBF4EE;
+  background-color: #1E4D8C;
+  color: #F4F8FD;
   padding: 3px 10px;
   border-radius: 4px;
   font-size: 11px;
@@ -84,7 +84,7 @@ main {
 }
 
 .star {
-  color: #F2C51B;
+  color: #8EC5FF;
 }
 
 /* ===== NAV BAR ===== */
@@ -101,9 +101,9 @@ main {
   gap: 16px;
   padding: 6px 8px 6px 16px;
   background-color: rgba(255, 253, 249, 0.92);
-  border: 1px solid rgba(122, 31, 11, 0.18);
+  border: 1px solid rgba(30, 77, 140, 0.18);
   border-radius: 999px;
-  box-shadow: 0 6px 20px rgba(42, 9, 3, 0.15);
+  box-shadow: 0 6px 20px rgba(11, 26, 48, 0.15);
 }
 
 .logo {
@@ -111,7 +111,7 @@ main {
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  color: #2A0903;
+  color: #0B1A30;
   text-decoration: none;
 }
 
@@ -122,9 +122,9 @@ main {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #8E1B0E;
-  color: #F2C51B;
-  font-family: 'Yatra One', serif;
+  background-color: #1E4D8C;
+  color: #8EC5FF;
+  font-family: Georgia, Garamond, serif;
 }
 
 .nav-links {
@@ -135,7 +135,7 @@ main {
 .nav-link {
   padding: 10px 14px;
   border-radius: 999px;
-  color: #5C4033;
+  color: #3D5578;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -143,23 +143,23 @@ main {
 }
 
 .nav-link:hover {
-  background-color: rgba(142, 27, 14, 0.08);
-  color: #8E1B0E;
+  background-color: rgba(30, 77, 140, 0.08);
+  color: #1E4D8C;
 }
 
 /* highlight the page im on */
 .nav-link.active {
-  background-color: #8E1B0E;
-  color: #FBF4EE;
+  background-color: #1E4D8C;
+  color: #F4F8FD;
 }
 
 /* buttons */
 .btn {
   display: inline-block;
   padding: 13px 26px;
-  background-color: #85700A;
-  color: #F7A38C;
-  border: 2px solid #D9471F;
+  background-color: #2F6FC0;
+  color: #CFE4FF;
+  border: 2px solid #4A90E2;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
@@ -170,29 +170,29 @@ main {
 }
 
 .btn:hover {
-  background-color: #F2C51B;
-  color: #2A0903;
-  box-shadow: 0 0 18px rgba(242, 197, 27, 0.5);
+  background-color: #8EC5FF;
+  color: #0B1A30;
+  box-shadow: 0 0 18px rgba(142, 197, 255, 0.5);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #8E1B0E;
-  border-color: #8E1B0E;
+  color: #1E4D8C;
+  border-color: #1E4D8C;
 }
 
 main .btn-outline {
-  color: #FBEFE6;
-  border-color: #FBEFE6;
+  color: #EAF2FC;
+  border-color: #EAF2FC;
 }
 
 .btn-small {
   padding: 8px 16px;
   font-size: 12px;
   border-radius: 999px;
-  background-color: #8E1B0E;
-  color: #FBF4EE;
-  border-color: #8E1B0E;
+  background-color: #1E4D8C;
+  color: #F4F8FD;
+  border-color: #1E4D8C;
 }
 
 .buttons {
@@ -217,35 +217,34 @@ main .btn-outline {
 .three-words {
   display: flex;
   justify-content: space-between;
-  font-family: 'Yatra One', serif;
+  font-family: Georgia, Garamond, serif;
   font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8E1B0E;
+  color: #1E4D8C;
   margin-bottom: 40px;
 }
 
 .big-word {
-  font-size: 150px;
+  font-size: 44px;
   line-height: 1;
-  color: #8E1B0E;
+  color: #1E4D8C;
   margin: 12px 0 8px;
-  text-shadow: 4px 4px 0 rgba(242, 197, 27, 0.35);
 }
 
 .byline {
-  font-family: 'Yatra One', serif;
+  font-family: Georgia, Garamond, serif;
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8E1B0E;
+  color: #1E4D8C;
   margin: 0 auto 20px;
 }
 
 .hero-quote {
   margin: 0 auto 40px;
   font-style: italic;
-  color: #5C4033;
+  color: #3D5578;
   font-weight: 600;
 }
 
@@ -253,11 +252,11 @@ main .btn-outline {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 6px solid #8E1B0E;
-  outline: 2px solid #F2C51B;
+  border: 6px solid #1E4D8C;
+  outline: 2px solid #8EC5FF;
   outline-offset: 6px;
   margin-bottom: 32px;
-  box-shadow: 0 0 0 14px rgba(142, 27, 14, 0.08);
+  box-shadow: 0 0 0 14px rgba(30, 77, 140, 0.08);
 }
 
 .hero-intro, .contact-line {
@@ -267,22 +266,22 @@ main .btn-outline {
 
 .contact-line {
   font-size: 14px;
-  color: #5C4033;
+  color: #3D5578;
 }
 
 .contact-line a {
-  color: #8E1B0E;
+  color: #1E4D8C;
 }
 
 /* dark strip with four words */
 .marquee {
   overflow: hidden;
-  background-color: #2A0903;
-  color: #F2C51B;
+  background-color: #0B1A30;
+  color: #8EC5FF;
   padding: 14px 0;
   text-align: center;
-  border-top: 3px solid #D9471F;
-  border-bottom: 3px solid #D9471F;
+  border-top: 3px solid #4A90E2;
+  border-bottom: 3px solid #4A90E2;
 }
 
 .marquee-track {
@@ -309,16 +308,16 @@ main section {
 }
 
 .lead {
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .intro, .meta {
-  color: #E9D3C8;
+  color: #C9D8EC;
 }
 
 .meta {
   font-size: 14px;
-  color: #F7A38C;
+  color: #CFE4FF;
   font-weight: 600;
 }
 
@@ -330,30 +329,30 @@ main section {
 }
 
 .stat {
-  background-color: #1D1513;
-  border: 2px solid #D9471F;
+  background-color: #0F1E36;
+  border: 2px solid #4A90E2;
   border-radius: 16px;
   padding: 20px;
 }
 
 .number {
-  font-family: 'Yatra One', serif;
+  font-family: Georgia, Garamond, serif;
   font-size: 52px;
   line-height: 1;
-  color: #F2C51B;
+  color: #8EC5FF;
   margin-bottom: 8px;
 }
 
 .stat p {
   font-size: 14px;
-  color: #E9D3C8;
+  color: #C9D8EC;
   margin: 0;
 }
 
 /* .stat p was making the numbers small so i added this */
 .stat .number {
   font-size: 52px;
-  color: #F2C51B;
+  color: #8EC5FF;
   margin-bottom: 8px;
 }
 
@@ -369,30 +368,30 @@ main section {
 }
 
 .card {
-  background-color: #1D1513;
-  border: 2px solid #D9471F;
+  background-color: #0F1E36;
+  border: 2px solid #4A90E2;
   border-radius: 18px;
   padding: 0 24px 24px;
   overflow: hidden;
-  color: #FBEFE6;
+  color: #EAF2FC;
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 .card-num {
   margin: 0 -24px 18px;
   padding: 16px 24px;
-  background-color: #3A1A08;
-  border-bottom: 2px solid #D9471F;
+  background-color: #16305A;
+  border-bottom: 2px solid #4A90E2;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #D9471F;
+  color: #4A90E2;
 }
 
 .card h3 {
-  font-size: 26px;
-  color: #F7A38C;
+  font-size: 19px;
+  color: #CFE4FF;
   margin: 0 0 8px;
 }
 
@@ -401,8 +400,8 @@ main section {
 }
 
 .card:hover {
-  border-color: #F2C51B;
-  box-shadow: 0 0 24px rgba(242, 197, 27, 0.25);
+  border-color: #8EC5FF;
+  box-shadow: 0 0 24px rgba(142, 197, 255, 0.25);
 }
 
 /* chess box */
@@ -410,15 +409,15 @@ main section {
   display: flex;
   align-items: center;
   gap: 32px;
-  background-color: #85700A;
-  color: #FBEFE6;
-  border: 2px solid #D9471F;
+  background-color: #2F6FC0;
+  color: #EAF2FC;
+  border: 2px solid #4A90E2;
   border-radius: 18px;
   padding: 32px;
 }
 
 .highlight .number {
-  color: #F2C51B;
+  color: #8EC5FF;
   font-size: 80px;
   margin: 0;
 }
@@ -435,23 +434,23 @@ main section {
 }
 
 .edu-list li {
-  background-color: #1D1513;
-  border: 2px solid #D9471F;
+  background-color: #0F1E36;
+  border: 2px solid #4A90E2;
   border-radius: 14px;
   padding: 18px 24px;
   margin-bottom: 14px;
 }
 
 .edu-list strong {
-  color: #F7A38C;
-  font-family: 'Yatra One', serif;
-  font-weight: 400;
-  font-size: 20px;
+  color: #CFE4FF;
+  font-family: Georgia, Garamond, serif;
+  font-weight: 700;
+  font-size: 19px;
 }
 
 .edu-list .meta {
   display: block;
-  color: #F2C51B;
+  color: #8EC5FF;
 }
 
 .skill-list {
@@ -466,14 +465,14 @@ main section {
 }
 
 .skill-list strong {
-  color: #F7A38C;
+  color: #CFE4FF;
 }
 
 .num {
-  font-family: 'Yatra One', serif;
+  font-family: Georgia, Garamond, serif;
   font-size: 30px;
   line-height: 1;
-  color: #F2C51B;
+  color: #8EC5FF;
 }
 
 .interests {
@@ -489,18 +488,18 @@ main section {
 
 .tool {
   padding: 10px 18px;
-  border: 2px solid #D9471F;
+  border: 2px solid #4A90E2;
   border-radius: 8px;
-  background-color: #1D1513;
-  color: #FBEFE6;
+  background-color: #0F1E36;
+  color: #EAF2FC;
   font-weight: 600;
   font-size: 14px;
   transition: border-color 0.2s, color 0.2s;
 }
 
 .tool:hover {
-  border-color: #F2C51B;
-  color: #F2C51B;
+  border-color: #8EC5FF;
+  color: #8EC5FF;
 }
 
 /* contact page cards */
@@ -537,8 +536,8 @@ main section {
   margin: 0 auto;
   padding: 48px;
   background-color: #FFFFFF;
-  color: #2A0903;
-  border: 2px solid #D9471F;
+  color: #0B1A30;
+  border: 2px solid #4A90E2;
   border-radius: 6px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
   font-size: 15px;
@@ -546,12 +545,12 @@ main section {
 
 .res-name {
   font-size: 34px;
-  color: #8E1B0E;
+  color: #1E4D8C;
   margin-bottom: 4px;
 }
 
 .res-contact, .res-date {
-  color: #5C4033;
+  color: #3D5578;
 }
 
 .res-date {
@@ -564,15 +563,15 @@ main section {
 }
 
 #resume h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8E1B0E;
+  color: #1E4D8C;
   margin-top: 24px;
   padding-bottom: 4px;
-  border-bottom: 1px solid rgba(122, 31, 11, 0.18);
+  border-bottom: 1px solid rgba(30, 77, 140, 0.18);
 }
 
 #resume p {
@@ -588,10 +587,10 @@ main section {
 footer {
   text-align: center;
   padding: 40px 24px 24px;
-  background-color: #2A0903;
-  color: #FBF4EE;
+  background-color: #0B1A30;
+  color: #F4F8FD;
   font-size: 14px;
-  border-top: 3px solid #D9471F;
+  border-top: 3px solid #4A90E2;
 }
 
 footer p {
@@ -599,9 +598,9 @@ footer p {
 }
 
 .foot-word {
-  font-family: 'Yatra One', serif;
-  font-size: 52px;
-  color: #F2C51B;
+  font-family: Georgia, Garamond, serif;
+  font-size: 21px;
+  color: #8EC5FF;
   line-height: 1.2;
 }
 
@@ -624,16 +623,16 @@ footer p {
     margin-bottom: 24px;
   }
   .big-word {
-    font-size: 88px;
+    font-size: 30px;
   }
   .byline {
     font-size: 16px;
   }
   h1 {
-    font-size: 38px;
+    font-size: 26px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 20px;
   }
   .photo {
     width: 180px;
