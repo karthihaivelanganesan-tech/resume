@@ -1,34 +1,15 @@
-/* colours i used */
-:root {
-  --cream: #FBF4EE;
-  --paper: #FFFDF9;
-  --ink: #2A0903;
-  --red: #8E1B0E;
-  --red-dark: #5A1206;
-  --card: #1D1513;
-  --card-head: #3A1A08;
-  --edge: #D9471F;
-  --gold: #F2C51B;
-  --mustard: #85700A;
-  --peach: #F7A38C;
-  --light: #FBEFE6;
-  --soft-light: #E9D3C8;
-  --line: rgba(122, 31, 11, 0.18);
-}
+/* colours i used: cream #FBF4EE, maroon #8E1B0E and #5A1206, dark brown #1D1513,
+   orange-red #D9471F, gold #F2C51B, mustard #85700A, peach #F7A38C */
 
 /* basic stuff */
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  background-color: var(--cream);
-  color: var(--ink);
+  background-color: #FBF4EE;
+  color: #2A0903;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.65;
@@ -59,20 +40,14 @@ p {
 }
 
 a {
-  color: var(--gold);
+  color: #F2C51B;
 }
 
-a:focus-visible, button:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 3px;
-}
-
-/* red wood background for the main part */
+/* red background for the main part, a bit darker at the bottom */
 main {
   flex: 1;
-  /* wood.svg is a noise texture i made, it goes on top of the red */
-  background: url("wood.svg"), linear-gradient(180deg, var(--red), var(--red-dark));
-  color: var(--light);
+  background: linear-gradient(180deg, #8E1B0E, #5A1206);
+  color: #FBEFE6;
 }
 
 /* small gold labels above the headings */
@@ -81,23 +56,15 @@ main {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #F2C51B;
   margin-bottom: 12px;
-}
-
-.label::before {
-  content: "\2726\00a0\00a0";
-}
-
-.label::after {
-  content: "\00a0\00a0\2726";
 }
 
 /* the yellow box behind some words */
 .hl {
   display: inline-block;
-  background-color: var(--mustard);
-  color: var(--peach);
+  background-color: #85700A;
+  color: #F7A38C;
   padding: 0 14px;
   border-radius: 4px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
@@ -105,8 +72,8 @@ main {
 
 .tag {
   display: inline-block;
-  background-color: var(--red);
-  color: var(--cream);
+  background-color: #8E1B0E;
+  color: #FBF4EE;
   padding: 3px 10px;
   border-radius: 4px;
   font-size: 11px;
@@ -116,16 +83,7 @@ main {
 }
 
 .star {
-  color: var(--gold);
-  display: inline-block;
-  animation: twinkle 2.4s ease-in-out infinite;
-}
-
-@keyframes twinkle {
-  50% {
-    opacity: 0.3;
-    transform: scale(0.7) rotate(45deg);
-  }
+  color: #F2C51B;
 }
 
 /* ===== NAV BAR ===== */
@@ -134,7 +92,7 @@ main {
   top: 12px;
   z-index: 10;
   max-width: 960px;
-  width: calc(100% - 32px);
+  width: 92%;
   margin: 12px auto 0;
   display: flex;
   justify-content: space-between;
@@ -142,8 +100,7 @@ main {
   gap: 16px;
   padding: 6px 8px 6px 16px;
   background-color: rgba(255, 253, 249, 0.92);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(122, 31, 11, 0.18);
   border-radius: 999px;
   box-shadow: 0 6px 20px rgba(42, 9, 3, 0.15);
 }
@@ -153,7 +110,7 @@ main {
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  color: var(--ink);
+  color: #2A0903;
   text-decoration: none;
 }
 
@@ -164,8 +121,8 @@ main {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--red);
-  color: var(--gold);
+  background-color: #8E1B0E;
+  color: #F2C51B;
   font-family: 'Yatra One', serif;
 }
 
@@ -186,22 +143,22 @@ main {
 
 .nav-link:hover {
   background-color: rgba(142, 27, 14, 0.08);
-  color: var(--red);
+  color: #8E1B0E;
 }
 
 /* highlight the page im on */
 .nav-link.active {
-  background-color: var(--red);
-  color: var(--cream);
+  background-color: #8E1B0E;
+  color: #FBF4EE;
 }
 
 /* buttons */
 .btn {
   display: inline-block;
   padding: 13px 26px;
-  background-color: var(--mustard);
-  color: var(--peach);
-  border: 2px solid var(--edge);
+  background-color: #85700A;
+  color: #F7A38C;
+  border: 2px solid #D9471F;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
@@ -212,29 +169,29 @@ main {
 }
 
 .btn:hover {
-  background-color: var(--gold);
-  color: var(--ink);
+  background-color: #F2C51B;
+  color: #2A0903;
   box-shadow: 0 0 18px rgba(242, 197, 27, 0.5);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--red);
-  border-color: var(--red);
+  color: #8E1B0E;
+  border-color: #8E1B0E;
 }
 
 main .btn-outline {
-  color: var(--light);
-  border-color: var(--light);
+  color: #FBEFE6;
+  border-color: #FBEFE6;
 }
 
 .btn-small {
   padding: 8px 16px;
   font-size: 12px;
   border-radius: 999px;
-  background-color: var(--red);
-  color: var(--cream);
-  border-color: var(--red);
+  background-color: #8E1B0E;
+  color: #FBF4EE;
+  border-color: #8E1B0E;
 }
 
 .buttons {
@@ -256,37 +213,6 @@ main .btn-outline {
   text-align: center;
 }
 
-/* everything at the top fades in one after the other */
-#hero > * {
-  animation: fade-up 0.9s ease both;
-}
-#hero > *:nth-child(2) {
-  animation-delay: 0.1s;
-}
-#hero > *:nth-child(3) {
-  animation-delay: 0.2s;
-}
-#hero > *:nth-child(4) {
-  animation-delay: 0.3s;
-}
-#hero > *:nth-child(5) {
-  animation-delay: 0.4s;
-}
-#hero > *:nth-child(n+6) {
-  animation-delay: 0.5s;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .three-words {
   display: flex;
   justify-content: space-between;
@@ -294,14 +220,14 @@ main .btn-outline {
   font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--red);
+  color: #8E1B0E;
   margin-bottom: 40px;
 }
 
 .big-word {
   font-size: 150px;
   line-height: 1;
-  color: var(--red);
+  color: #8E1B0E;
   margin: 12px 0 8px;
   text-shadow: 4px 4px 0 rgba(242, 197, 27, 0.35);
 }
@@ -311,7 +237,7 @@ main .btn-outline {
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--red);
+  color: #8E1B0E;
   margin: 0 auto 20px;
 }
 
@@ -326,9 +252,8 @@ main .btn-outline {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid var(--red);
-  outline: 2px solid var(--gold);
+  border: 6px solid #8E1B0E;
+  outline: 2px solid #F2C51B;
   outline-offset: 6px;
   margin-bottom: 32px;
   box-shadow: 0 0 0 14px rgba(142, 27, 14, 0.08);
@@ -345,42 +270,34 @@ main .btn-outline {
 }
 
 .contact-line a {
-  color: var(--red);
+  color: #8E1B0E;
 }
 
-/* moving text strip */
+/* dark strip with four words */
 .marquee {
   overflow: hidden;
-  background-color: var(--ink);
-  color: var(--gold);
+  background-color: #2A0903;
+  color: #F2C51B;
   padding: 14px 0;
-  white-space: nowrap;
-  border-top: 3px solid var(--edge);
-  border-bottom: 3px solid var(--edge);
+  text-align: center;
+  border-top: 3px solid #D9471F;
+  border-bottom: 3px solid #D9471F;
 }
 
 .marquee-track {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  animation: slide 30s linear infinite;
 }
 
 .marquee-track span {
   display: inline-flex;
   gap: 24px;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 /* sections */
@@ -395,22 +312,13 @@ main section {
 }
 
 .intro, .meta {
-  color: var(--soft-light);
+  color: #E9D3C8;
 }
 
 .meta {
   font-size: 14px;
-  color: var(--peach);
+  color: #F7A38C;
   font-weight: 600;
-}
-
-/* slide in effect when you scroll (only works in some browsers) */
-@supports (animation-timeline: view()) {
-  main section > *, .card, .stat, .edu-list li, .skill-list li {
-    animation: fade-up linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 25%;
-  }
 }
 
 /* at a glance boxes */
@@ -421,8 +329,8 @@ main section {
 }
 
 .stat {
-  background-color: var(--card);
-  border: 2px solid var(--edge);
+  background-color: #1D1513;
+  border: 2px solid #D9471F;
   border-radius: 16px;
   padding: 20px;
 }
@@ -431,20 +339,20 @@ main section {
   font-family: 'Yatra One', serif;
   font-size: 52px;
   line-height: 1;
-  color: var(--gold);
+  color: #F2C51B;
   margin-bottom: 8px;
 }
 
 .stat p {
   font-size: 14px;
-  color: var(--soft-light);
+  color: #E9D3C8;
   margin: 0;
 }
 
 /* .stat p was making the numbers small so i added this */
 .stat .number {
   font-size: 52px;
-  color: var(--gold);
+  color: #F2C51B;
   margin-bottom: 8px;
 }
 
@@ -460,30 +368,30 @@ main section {
 }
 
 .card {
-  background-color: var(--card);
-  border: 2px solid var(--edge);
+  background-color: #1D1513;
+  border: 2px solid #D9471F;
   border-radius: 18px;
   padding: 0 24px 24px;
   overflow: hidden;
-  color: var(--light);
-  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  color: #FBEFE6;
+  transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 .card-num {
   margin: 0 -24px 18px;
   padding: 16px 24px;
-  background-color: var(--card-head);
-  border-bottom: 2px solid var(--edge);
+  background-color: #3A1A08;
+  border-bottom: 2px solid #D9471F;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--edge);
+  color: #D9471F;
 }
 
 .card h3 {
   font-size: 26px;
-  color: var(--peach);
+  color: #F7A38C;
   margin: 0 0 8px;
 }
 
@@ -492,9 +400,8 @@ main section {
 }
 
 .card:hover {
-  border-color: var(--gold);
+  border-color: #F2C51B;
   box-shadow: 0 0 24px rgba(242, 197, 27, 0.25);
-  transform: translateY(-4px);
 }
 
 /* chess box */
@@ -502,15 +409,15 @@ main section {
   display: flex;
   align-items: center;
   gap: 32px;
-  background-color: var(--mustard);
-  color: var(--light);
-  border: 2px solid var(--edge);
+  background-color: #85700A;
+  color: #FBEFE6;
+  border: 2px solid #D9471F;
   border-radius: 18px;
   padding: 32px;
 }
 
 .highlight .number {
-  color: var(--gold);
+  color: #F2C51B;
   font-size: 80px;
   margin: 0;
 }
@@ -527,15 +434,15 @@ main section {
 }
 
 .edu-list li {
-  background-color: var(--card);
-  border: 2px solid var(--edge);
+  background-color: #1D1513;
+  border: 2px solid #D9471F;
   border-radius: 14px;
   padding: 18px 24px;
   margin-bottom: 14px;
 }
 
 .edu-list strong {
-  color: var(--peach);
+  color: #F7A38C;
   font-family: 'Yatra One', serif;
   font-weight: 400;
   font-size: 20px;
@@ -543,7 +450,7 @@ main section {
 
 .edu-list .meta {
   display: block;
-  color: var(--gold);
+  color: #F2C51B;
 }
 
 .skill-list {
@@ -558,14 +465,14 @@ main section {
 }
 
 .skill-list strong {
-  color: var(--peach);
+  color: #F7A38C;
 }
 
 .num {
   font-family: 'Yatra One', serif;
   font-size: 30px;
   line-height: 1;
-  color: var(--gold);
+  color: #F2C51B;
 }
 
 .interests {
@@ -581,18 +488,18 @@ main section {
 
 .tool {
   padding: 10px 18px;
-  border: 2px solid var(--edge);
+  border: 2px solid #D9471F;
   border-radius: 8px;
-  background-color: var(--card);
-  color: var(--light);
+  background-color: #1D1513;
+  color: #FBEFE6;
   font-weight: 600;
   font-size: 14px;
   transition: border-color 0.2s, color 0.2s;
 }
 
 .tool:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: #F2C51B;
+  color: #F2C51B;
 }
 
 /* contact page cards */
@@ -629,8 +536,8 @@ main section {
   margin: 0 auto;
   padding: 48px;
   background-color: #FFFFFF;
-  color: var(--ink);
-  border: 2px solid var(--edge);
+  color: #2A0903;
+  border: 2px solid #D9471F;
   border-radius: 6px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
   font-size: 15px;
@@ -638,7 +545,7 @@ main section {
 
 .res-name {
   font-size: 34px;
-  color: var(--red);
+  color: #8E1B0E;
   margin-bottom: 4px;
 }
 
@@ -661,10 +568,10 @@ main section {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--red);
+  color: #8E1B0E;
   margin-top: 24px;
   padding-bottom: 4px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(122, 31, 11, 0.18);
 }
 
 #resume p {
@@ -680,10 +587,10 @@ main section {
 footer {
   text-align: center;
   padding: 40px 24px 24px;
-  background-color: var(--ink);
-  color: var(--cream);
+  background-color: #2A0903;
+  color: #FBF4EE;
   font-size: 14px;
-  border-top: 3px solid var(--edge);
+  border-top: 3px solid #D9471F;
 }
 
 footer p {
@@ -693,31 +600,8 @@ footer p {
 .foot-word {
   font-family: 'Yatra One', serif;
   font-size: 52px;
-  color: var(--gold);
+  color: #F2C51B;
   line-height: 1.2;
-}
-
-/* music button (bottom right) */
-.music-btn {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 20;
-  padding: 12px 20px;
-  border: 2px solid var(--gold);
-  border-radius: 999px;
-  background-color: var(--red);
-  color: var(--cream);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(42, 9, 3, 0.3);
-  transition: background-color 0.2s;
-}
-
-.music-btn:hover {
-  background-color: var(--red-dark);
 }
 
 /* ===== PHONE ===== */
@@ -777,17 +661,6 @@ footer p {
   }
 }
 
-/* turn off animations if someone doesnt want motion */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-  html {
-    scroll-behavior: auto;
-  }
-}
-
 /* when printing only show the resume */
 @media print {
   @page { size: A4; margin: 15mm; }
@@ -800,7 +673,7 @@ footer p {
   main {
     background: none;
   }
-  #navbar, #hero, .marquee, main section, .resume-top, footer, .music-btn {
+  #navbar, #hero, .marquee, main section, .resume-top, footer {
     display: none;
   }
   #resume-wrap, #resume {
@@ -814,6 +687,5 @@ footer p {
   #resume, #resume h2, #resume h3, #resume p {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
-    animation: none;
   }
 }
