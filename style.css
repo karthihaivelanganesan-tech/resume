@@ -1,6 +1,6 @@
-/* my colours (blue theme)
-   off-white #F4F8FD, blue #1E4D8C and dark blue #0F2C55, navy cards #0F1E36,
-   bright blue #4A90E2, sky blue #8EC5FF, mid blue #2F6FC0, pale blue #CFE4FF */
+/* my colours (formal business theme)
+   text black #111111 and grey #444444, navy #1F3A5F and dark navy #14263F,
+   light grey background #F5F7FA, borders #C8D1DC, pale navy #E3E9F2 */
 
 /* basic stuff */
 * {
@@ -9,8 +9,8 @@
 
 body {
   margin: 0;
-  background-color: #F4F8FD;
-  color: #0B1A30;
+  background-color: #FFFFFF;
+  color: #111111;
   font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.65;
@@ -41,40 +41,39 @@ p {
 }
 
 a {
-  color: #8EC5FF;
+  color: #1F3A5F;
 }
 
-/* blue background for the main part, a bit darker at the bottom */
+/* light grey background for the main part */
 main {
   flex: 1;
-  background: linear-gradient(180deg, #1E4D8C, #0F2C55);
-  color: #EAF2FC;
+  background-color: #F5F7FA;
+  color: #111111;
 }
 
-/* small light blue labels above the headings */
+/* small navy labels above the headings */
 .label {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8EC5FF;
+  color: #1F3A5F;
   margin-bottom: 12px;
 }
 
-/* the blue box behind some words */
+/* light navy box behind some words */
 .hl {
   display: inline-block;
-  background-color: #2F6FC0;
-  color: #CFE4FF;
-  padding: 0 14px;
+  background-color: #E3E9F2;
+  color: #111111;
+  padding: 0 10px;
   border-radius: 4px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .tag {
   display: inline-block;
-  background-color: #1E4D8C;
-  color: #F4F8FD;
+  background-color: #1F3A5F;
+  color: #FFFFFF;
   padding: 3px 10px;
   border-radius: 4px;
   font-size: 11px;
@@ -84,7 +83,7 @@ main {
 }
 
 .star {
-  color: #8EC5FF;
+  color: #1F3A5F;
 }
 
 /* ===== NAV BAR ===== */
@@ -100,10 +99,9 @@ main {
   align-items: center;
   gap: 16px;
   padding: 6px 8px 6px 16px;
-  background-color: rgba(255, 253, 249, 0.92);
-  border: 1px solid rgba(30, 77, 140, 0.18);
+  background-color: #1F3A5F;
   border-radius: 999px;
-  box-shadow: 0 6px 20px rgba(11, 26, 48, 0.15);
+  box-shadow: 0 6px 20px rgba(17, 17, 17, 0.15);
 }
 
 .logo {
@@ -111,7 +109,7 @@ main {
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  color: #0B1A30;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -122,8 +120,8 @@ main {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #1E4D8C;
-  color: #8EC5FF;
+  background-color: #FFFFFF;
+  color: #1F3A5F;
   font-family: Georgia, Garamond, serif;
 }
 
@@ -135,7 +133,7 @@ main {
 .nav-link {
   padding: 10px 14px;
   border-radius: 999px;
-  color: #3D5578;
+  color: #E3E9F2;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -143,56 +141,56 @@ main {
 }
 
 .nav-link:hover {
-  background-color: rgba(30, 77, 140, 0.08);
-  color: #1E4D8C;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
 }
 
 /* highlight the page im on */
 .nav-link.active {
-  background-color: #1E4D8C;
-  color: #F4F8FD;
+  background-color: #FFFFFF;
+  color: #1F3A5F;
 }
 
 /* buttons */
 .btn {
   display: inline-block;
   padding: 13px 26px;
-  background-color: #2F6FC0;
-  color: #CFE4FF;
-  border: 2px solid #4A90E2;
+  background-color: #1F3A5F;
+  color: #FFFFFF;
+  border: 2px solid #1F3A5F;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .btn:hover {
-  background-color: #8EC5FF;
-  color: #0B1A30;
-  box-shadow: 0 0 18px rgba(142, 197, 255, 0.5);
+  background-color: #14263F;
+  border-color: #14263F;
+  color: #FFFFFF;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #1E4D8C;
-  border-color: #1E4D8C;
+  color: #1F3A5F;
+  border-color: #1F3A5F;
 }
 
 main .btn-outline {
-  color: #EAF2FC;
-  border-color: #EAF2FC;
+  color: #1F3A5F;
+  border-color: #1F3A5F;
 }
 
 .btn-small {
   padding: 8px 16px;
   font-size: 12px;
   border-radius: 999px;
-  background-color: #1E4D8C;
-  color: #F4F8FD;
-  border-color: #1E4D8C;
+  background-color: #FFFFFF;
+  color: #1F3A5F;
+  border-color: #FFFFFF;
 }
 
 .buttons {
@@ -221,14 +219,14 @@ main .btn-outline {
   font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #1E4D8C;
+  color: #1F3A5F;
   margin-bottom: 40px;
 }
 
 .big-word {
   font-size: 44px;
   line-height: 1;
-  color: #1E4D8C;
+  color: #111111;
   margin: 12px 0 8px;
 }
 
@@ -237,14 +235,14 @@ main .btn-outline {
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #1E4D8C;
+  color: #1F3A5F;
   margin: 0 auto 20px;
 }
 
 .hero-quote {
   margin: 0 auto 40px;
   font-style: italic;
-  color: #3D5578;
+  color: #444444;
   font-weight: 600;
 }
 
@@ -252,11 +250,8 @@ main .btn-outline {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 6px solid #1E4D8C;
-  outline: 2px solid #8EC5FF;
-  outline-offset: 6px;
+  border: 6px solid #1F3A5F;
   margin-bottom: 32px;
-  box-shadow: 0 0 0 14px rgba(30, 77, 140, 0.08);
 }
 
 .hero-intro, .contact-line {
@@ -266,22 +261,20 @@ main .btn-outline {
 
 .contact-line {
   font-size: 14px;
-  color: #3D5578;
+  color: #444444;
 }
 
 .contact-line a {
-  color: #1E4D8C;
+  color: #1F3A5F;
 }
 
 /* dark strip with four words */
 .marquee {
   overflow: hidden;
-  background-color: #0B1A30;
-  color: #8EC5FF;
+  background-color: #1F3A5F;
+  color: #FFFFFF;
   padding: 14px 0;
   text-align: center;
-  border-top: 3px solid #4A90E2;
-  border-bottom: 3px solid #4A90E2;
 }
 
 .marquee-track {
@@ -300,6 +293,11 @@ main .btn-outline {
   gap: 24px;
 }
 
+/* stars in the strip need to be white on navy */
+.marquee .star {
+  color: #FFFFFF;
+}
+
 /* sections */
 main section {
   max-width: 1000px;
@@ -312,12 +310,12 @@ main section {
 }
 
 .intro, .meta {
-  color: #C9D8EC;
+  color: #444444;
 }
 
 .meta {
   font-size: 14px;
-  color: #CFE4FF;
+  color: #444444;
   font-weight: 600;
 }
 
@@ -329,9 +327,10 @@ main section {
 }
 
 .stat {
-  background-color: #0F1E36;
-  border: 2px solid #4A90E2;
-  border-radius: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8D1DC;
+  border-top: 4px solid #1F3A5F;
+  border-radius: 8px;
   padding: 20px;
 }
 
@@ -339,20 +338,20 @@ main section {
   font-family: Georgia, Garamond, serif;
   font-size: 52px;
   line-height: 1;
-  color: #8EC5FF;
+  color: #1F3A5F;
   margin-bottom: 8px;
 }
 
 .stat p {
   font-size: 14px;
-  color: #C9D8EC;
+  color: #444444;
   margin: 0;
 }
 
 /* .stat p was making the numbers small so i added this */
 .stat .number {
   font-size: 52px;
-  color: #8EC5FF;
+  color: #1F3A5F;
   margin-bottom: 8px;
 }
 
@@ -368,30 +367,29 @@ main section {
 }
 
 .card {
-  background-color: #0F1E36;
-  border: 2px solid #4A90E2;
-  border-radius: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8D1DC;
+  border-radius: 8px;
   padding: 0 24px 24px;
   overflow: hidden;
-  color: #EAF2FC;
+  color: #111111;
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 .card-num {
   margin: 0 -24px 18px;
-  padding: 16px 24px;
-  background-color: #16305A;
-  border-bottom: 2px solid #4A90E2;
+  padding: 12px 24px;
+  background-color: #1F3A5F;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #4A90E2;
+  color: #FFFFFF;
 }
 
 .card h3 {
   font-size: 19px;
-  color: #CFE4FF;
+  color: #111111;
   margin: 0 0 8px;
 }
 
@@ -400,8 +398,8 @@ main section {
 }
 
 .card:hover {
-  border-color: #8EC5FF;
-  box-shadow: 0 0 24px rgba(142, 197, 255, 0.25);
+  border-color: #1F3A5F;
+  box-shadow: 0 6px 18px rgba(31, 58, 95, 0.15);
 }
 
 /* chess box */
@@ -409,15 +407,16 @@ main section {
   display: flex;
   align-items: center;
   gap: 32px;
-  background-color: #2F6FC0;
-  color: #EAF2FC;
-  border: 2px solid #4A90E2;
-  border-radius: 18px;
+  background-color: #FFFFFF;
+  color: #111111;
+  border: 1px solid #C8D1DC;
+  border-left: 6px solid #1F3A5F;
+  border-radius: 8px;
   padding: 32px;
 }
 
 .highlight .number {
-  color: #8EC5FF;
+  color: #1F3A5F;
   font-size: 80px;
   margin: 0;
 }
@@ -434,15 +433,16 @@ main section {
 }
 
 .edu-list li {
-  background-color: #0F1E36;
-  border: 2px solid #4A90E2;
-  border-radius: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8D1DC;
+  border-left: 5px solid #1F3A5F;
+  border-radius: 6px;
   padding: 18px 24px;
   margin-bottom: 14px;
 }
 
 .edu-list strong {
-  color: #CFE4FF;
+  color: #111111;
   font-family: Georgia, Garamond, serif;
   font-weight: 700;
   font-size: 19px;
@@ -450,7 +450,7 @@ main section {
 
 .edu-list .meta {
   display: block;
-  color: #8EC5FF;
+  color: #1F3A5F;
 }
 
 .skill-list {
@@ -465,14 +465,14 @@ main section {
 }
 
 .skill-list strong {
-  color: #CFE4FF;
+  color: #111111;
 }
 
 .num {
   font-family: Georgia, Garamond, serif;
   font-size: 30px;
   line-height: 1;
-  color: #8EC5FF;
+  color: #1F3A5F;
 }
 
 .interests {
@@ -488,18 +488,18 @@ main section {
 
 .tool {
   padding: 10px 18px;
-  border: 2px solid #4A90E2;
-  border-radius: 8px;
-  background-color: #0F1E36;
-  color: #EAF2FC;
+  border: 1px solid #1F3A5F;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  color: #111111;
   font-weight: 600;
   font-size: 14px;
-  transition: border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .tool:hover {
-  border-color: #8EC5FF;
-  color: #8EC5FF;
+  background-color: #1F3A5F;
+  color: #FFFFFF;
 }
 
 /* contact page cards */
@@ -536,21 +536,21 @@ main section {
   margin: 0 auto;
   padding: 48px;
   background-color: #FFFFFF;
-  color: #0B1A30;
-  border: 2px solid #4A90E2;
+  color: #111111;
+  border: 1px solid #C8D1DC;
   border-radius: 6px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.12);
   font-size: 15px;
 }
 
 .res-name {
   font-size: 34px;
-  color: #1E4D8C;
+  color: #111111;
   margin-bottom: 4px;
 }
 
 .res-contact, .res-date {
-  color: #3D5578;
+  color: #444444;
 }
 
 .res-date {
@@ -568,10 +568,10 @@ main section {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #1E4D8C;
+  color: #1F3A5F;
   margin-top: 24px;
   padding-bottom: 4px;
-  border-bottom: 1px solid rgba(30, 77, 140, 0.18);
+  border-bottom: 1px solid #C8D1DC;
 }
 
 #resume p {
@@ -586,11 +586,10 @@ main section {
 /* footer */
 footer {
   text-align: center;
-  padding: 40px 24px 24px;
-  background-color: #0B1A30;
-  color: #F4F8FD;
+  padding: 32px 24px 24px;
+  background-color: #1F3A5F;
+  color: #FFFFFF;
   font-size: 14px;
-  border-top: 3px solid #4A90E2;
 }
 
 footer p {
@@ -600,7 +599,7 @@ footer p {
 .foot-word {
   font-family: Georgia, Garamond, serif;
   font-size: 21px;
-  color: #8EC5FF;
+  color: #FFFFFF;
   line-height: 1.2;
 }
 
